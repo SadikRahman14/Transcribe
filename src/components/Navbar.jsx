@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../assets/CodeTrace.png'; 
+import logo from '../assets/LittleT.png'; 
 
 // ADD isFullScreen TO PROPS HERE 👇
 export default function Navbar({ wpm, status, isStrictMode, setIsStrictMode, onRestart, isFullScreen }) {
@@ -12,11 +12,11 @@ export default function Navbar({ wpm, status, isStrictMode, setIsStrictMode, onR
             src={logo} 
             alt="CodeTrace Logo" 
             className="h-14 w-auto object-contain drop-shadow-lg" 
-        /> */}
+        />  */}
         <div>
-          <h1 className="text-3xl font-bold tracking-tighter text-white mb-1">Transcribe</h1>
-          <p className="text-slate-500 text-sm">
-             {isStrictMode ? 'STRICT: Mistakes blocked. Auto-submits.' : 'NORMAL: Type freely. Submit manually.'}
+          <h1 className="text-3xl font-bold tracking-tight text-white mb-1">transcribe</h1>
+          <p className="text-slate-500 text-sm font-bold">
+             One Line at a Time
           </p>
         </div>
       </div>

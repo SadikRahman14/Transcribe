@@ -139,7 +139,7 @@ export default function App() {
                     onSelect={handleSnippetChange}
                 />
                 
-                <button onClick={() => setShowCustomModal(true)} className="px-4 w-40 py-2 rounded text-sm font-bold bg-indigo-600 hover:bg-indigo-500 text-white ml-4 shadow-lg shadow-indigo-900/20">
+                <button onClick={() => setShowCustomModal(true)} className="px-4 w-40 py-2 rounded text-sm font-bold bg-cyan-600 hover:bg-cyan-500 text-white ml-4 shadow-lg shadow-indigo-900/20">
                     + Custom Code
                 </button>
             </div>

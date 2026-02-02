@@ -78,7 +78,7 @@ export default function Footer() {
                className="h-8 w-auto opacity-80" 
            /> */}
            <div className="text-center md:text-left">
-              <div className="text-slate-200 font-bold tracking-tight mb-0.5">Transcribe</div>
+              <div className="text-slate-200 font-bold tracking-tight mb-0.5">transcribe</div>
               <p className="text-slate-500 tracking-tight text-sm">Build muscle memory, one line at a time.</p>
            </div>
         </div>
