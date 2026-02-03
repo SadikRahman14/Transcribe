@@ -10,6 +10,7 @@ import SnippetTabs from './components/SnippetTabs';
 import EditorArea from './components/EditorArea';
 import ResultsModal from './components/ResultsModal';
 import CustomCodeModal from './components/CustomCodeModal';
+import SplashScreen from './components/SplashScreen';
 
 // LANGUAGE CONFIGURATION
 const LANGUAGES = [
@@ -35,7 +36,7 @@ export default function App() {
   
   const [isStrictMode, setIsStrictMode] = useState(false);
   const [isFullScreen, setIsFullScreen] = useState(false); // Focus Mode
-
+  const [isLoading, setIsLoading] = useState(true);
   // Modals
   const [showCustomModal, setShowCustomModal] = useState(false);
   const [showResultModal, setShowResultModal] = useState(false);
@@ -91,6 +92,10 @@ export default function App() {
 
   // --- RENDER ---
   return (
+    <>
+      {isLoading && (
+        <SplashScreen onComplete={() => setIsLoading(false)} />
+      )}
     <div className={`min-h-screen bg-slate-950 text-slate-200 font-sans selection:bg-cyan-900 selection:text-cyan-100 flex flex-col ${!isFullScreen ? 'pb-20' : ''}`}>
 
       <style>{`
@@ -223,6 +228,7 @@ export default function App() {
       )}
 
       {!isFullScreen && <Footer />}
-    </div>
+      </div>
+      </>
   );
 }
